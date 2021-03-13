@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Comfortaa-Light;
+    src: url('./fonts/Comfortaa-Light.ttf');
+}
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url('./fonts/Comfortaa-Regular.ttf');
+}
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url('./fonts/Comfortaa-Bold.ttf');
+}
+
+body {
+    font-family: Comfortaa-Light, sans-serif;
+    background: #364253;
+    color: #dadce7;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #app {
+    background: #fff;
+    border-radius: 0.4rem;
+    padding: 1.5rem 0rem;
+    box-shadow: 2px 8px 11px rgba(0, 0, 0, 0.2);
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    justify-items: center;
+  }
+
+  form input {
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #000;
+    width: 120px;
+    outline: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #364253;
+  }
+
+  form input::placeholder {
+    color: #969696;
+    opacity: 0.5;
+    font-size: 1rem;
+    font-family: Comfortaa-Light;
+  }
+
+  form button {
+    font-family: Comfortaa-Regular;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 5rem;
+    border: none;
+    width: max-content;
+    font-size: 1.1rem;
+    background: rgba(88,27,177);
+    background: linear-gradient(90deg, rgba(88,27,177,1) 0%, rgba(59,0,149,1) 100%);
+    transition: all .2s linear;
+    font-weight: 100;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  form button:hover {
+    opacity: 1;
+  }
+
+  main {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: all 1s;
+  }
+
+  p:nth-child(1) {
+    padding-top: 1.3rem;
+  }
+
+  p {
+    color: #4091dd;
+    font-size: 1.1rem;
+    margin: 0.6rem 0;
+  }
+
+  footer {
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+  }
+
+  footer p {
+      text-align: center;
+      color: rgb(138, 138, 138);
+      font-size: 0.9rem;
+      letter-spacing: .03rem;
+  }
+
+  footer p a {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      font-family: Comfortaa-Bold;
+  }
